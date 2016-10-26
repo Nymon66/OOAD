@@ -1,0 +1,9 @@
+Casual Use case
+
+-book holidays airsoft 
+The user connects to the website and make a research of airsoft holidays. He can choose a date and the equipments he wants to rant with his holidays. The system returns him an information which says if the holidays booking and the rant equipments are available. Thereafter, he selects the method paiement and process to it and books his holidays. The system sends him an email confirmation. He can also modify, cancel and change his trip via the account panel.
+
+
+-choose a party and the stuff included
+The user connects to the website and can search an event. He has to select different filters and wait for the result. Thereafter, he selects one specific event he wants to go and view details on it. If the details and informations about it match with his search, the user can booking a place for the specific date and process to the payment methods. He will receive an email confirmation. He can change, cancel, or modify it on his account page.
+

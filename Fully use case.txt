@@ -1,0 +1,26 @@
+Primary Actor : User
+Goal in Context : User books holidays via the system, gets it and paid it.
+Level : Summary
+Stakeholders and Interests : 
+	User : Wants was he/she ordered and an easy way to do that
+	Company : Wants to control spending but allow needed purchases
+Precondition : 
+Minimum guarantees : All events and holidays have to be available on the date of booking.
+Success guarantees : Requestor has good, correct budget ready to be debited
+Trigger: Requestor decides to buy something
+
+Main success
+1.Requestor has a valid connection
+2.Requestor initiates a request
+3.Approver check money in the budget, check available dates and good prices, complete request for submission.
+4.Authorizer validates paiement process
+5.User complete request for ordering
+6.Company deliver holidays, get receipt for delivery
+7.Company registers email adress, and send confirmation email
+8.Requestor makes request sent.
+
+Extensions:
+2.At any time prior to make his holidays, requestor can change or cancel the request
+Cancelling it removes it from any active processing and delete from system
+Change the date of departure
+8.Requestor can change the departure again with the agreement of the company
