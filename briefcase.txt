@@ -1,0 +1,36 @@
+Brief Use case
+
+
+-book holidays airsoft 
+	The user connects to website
+	He chosses holidays and duration and place
+	He paids it
+	He receives an email confirmation
+
+
+-choose a party and the stuff included
+	The suer connect to website
+	He connects on website
+	He chooses a date
+	He chooses the stuff he wants to bring with him
+	He books and mades the paiement process
+
+
+-read magazines and post comments
+	He connects to the website
+	He can buy magazines and read it
+	He posts comments and reviews
+	 
+-sell or buy airsoft stuff
+	He connects to account
+	He can sell his stuff by post a topic
+	He can buy stuff via a private message system between the users
+
+
+-research airsoft team
+	He connects to website
+	He searchs a type of association
+	He searchs the location
+	He can search the mumbers
+
+
