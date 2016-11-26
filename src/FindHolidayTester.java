@@ -5,7 +5,7 @@ public class FindHolidayTester {
         Inventory inventory = new Inventory();
         initializeInventory(inventory);
 
-        Holiday customerSearch = new Holiday("","event", "21-01-2016", 354.00);
+        Holiday customerSearch = new Holiday("test", Type.STANDARD , "", "21-01-2016", 354.00);
 
         Holiday holiday = inventory.search(customerSearch);
         if(holiday != null){
@@ -19,6 +19,6 @@ public class FindHolidayTester {
     }
 
     private static void initializeInventory(Inventory inventory){
-
+            inventory.addHoliday("test", Type.STANDARD, "","21-01-2016", 354.00);
     }
 }
