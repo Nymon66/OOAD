@@ -28,7 +28,7 @@ public class Holiday {
         this.price = newPrice;
     }
 
-    public String description(){
+    public String getDescription(){
         return description;
     }
 

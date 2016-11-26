@@ -28,7 +28,27 @@ public class Inventory {
         return null;
     }
 
-    public static void main (String[] args){
+    public Holiday search(Holiday searchHoliday){
+        for (Iterator i = holidays.iterator(); i.hasNext();){
+            Holiday holiday = (Holiday)i.next();
+            String name = searchHoliday.getName();
+            if ((name != null) && (!name.equals("")) && (!name.equals(holiday.getName())))
+                continue;
 
-    };
+            String description = searchHoliday.getDescription();
+            if ((description != null) && (!description.equals("")) && (!description.equals(holiday.getDescription())))
+                continue;
+
+            String date = searchHoliday.getDate();
+            if ((date != null) && (!date.equals("")) && (!date.equals(holiday.getDate())))
+                continue;
+
+            double price = searchHoliday.getPrice();
+            if ((price != 0) && (price != holiday.getPrice()))
+                continue;
+
+        }
+        return null;
+    }
+
 }
