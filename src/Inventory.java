@@ -10,12 +10,9 @@ public class Inventory {
         holidays = new LinkedList();
     }
 
-    public void addHoliday(String name,
-                           Type type,
-            String description,
-            String date,
-            double price){
-        Holiday holiday = new Holiday(name, type, description,date,price);
+    public void addHoliday(String name, double price,
+                           HolidaySpec spec){
+        Holiday holiday = new Holiday(name,price,spec);
         holidays.add(holiday);
     }
 
@@ -29,29 +26,17 @@ public class Inventory {
         return null;
     }
 
-    public Holiday search(Holiday searchHoliday){
+    public List search(HolidaySpec searchSpec){
+        List holidayList = new LinkedList();
+
         for (Iterator i = holidays.iterator(); i.hasNext();){
             Holiday holiday = (Holiday)i.next();
-            String name = searchHoliday.getName().toLowerCase();
-            if ((name != null) && (!name.equals("")) && (!name.equals(holiday.getName().toLowerCase())))
-                continue;
+            if (holiday.getSpec().matches(searchSpec))
+                holidayList.add(holiday);
 
-            if(searchHoliday.getType() != holiday.getType())continue ;
-
-            String description = searchHoliday.getDescription().toLowerCase();
-            if ((description != null) && (!description.equals("")) && (!description.equals(holiday.getDescription().toLowerCase())))
-                continue;
-
-            String date = searchHoliday.getDate().toLowerCase();
-            if ((date != null) && (!date.equals("")) && (!date.equals(holiday.getDate().toLowerCase())))
-                continue;
-
-            double price = searchHoliday.getPrice();
-            if ((price != 0) && (price != holiday.getPrice()))
-                continue;
-            return holiday;
         }
-        return null;
+        return holidayList;
+
     }
 
 }

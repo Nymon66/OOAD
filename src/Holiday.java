@@ -4,41 +4,28 @@
 public class Holiday {
 
     public String name;
-    public Type type;
-    public String description;
-    public String date;
     public double price;
+    HolidaySpec spec;
 
-    public Holiday(String name, Type type, String description, String date, double price ){
+    public Holiday(String name, double price, HolidaySpec spec ){
 
         this.name = name;
-        this.type = type;
-        this.description = description;
-        this.date = date;
         this.price = price;
+        this.spec = spec;
     }
 
     public String getName(){
             return name;
     }
 
-    public Type getType(){ return type;}
+    public double getPrice(){return price;}
 
-    public double getPrice(){
-        return price;
+
+
+    public HolidaySpec getSpec(){
+        return spec;
     }
 
-    public void setPrice(float newPrice){
-        this.price = newPrice;
-    }
-
-    public String getDescription(){
-        return description;
-    }
-
-    public String getDate(){
-        return date;
-    }
 
 
 
