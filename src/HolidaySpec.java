@@ -1,45 +1,48 @@
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Objects;
+
 /**
  * Created by Antoine on 08/12/2016.
  */
 public class HolidaySpec {
-    private Type type;
-    private String description;
-    private String date;
 
-    public HolidaySpec(Type type, String description, String date){
-        this.type = type;
-        this.description = description;
-        this.date = date;
+    private Map properties;
 
+    public HolidaySpec(Map properties){
+        if(properties == null){
+        this.properties = new HashMap();
+        }
+        else
+        {
+            this.properties = new HashMap(properties);
+        }
     }
+
+    public Object getProperty(String propertyName){
+        return properties.get(propertyName);
+    }
+
+    public Map getProperties(){
+        return properties;
+    }
+
+
 
     public boolean matches(HolidaySpec otherSpec){
 
 
-        if (type != otherSpec.type)
-            return false;
+       for(Iterator i = otherSpec.getProperties().keySet().iterator();i.hasNext();){
+           String propertyName = (String)i.next();
+           if (!properties.get(propertyName).equals(otherSpec.getProperty(propertyName))){
+               return false;
+           }
+       }
 
-        if ((description != null) && (!description.equals(otherSpec.description)) &&(!description.equals("")))
-            return false;
-
-        if ((date != null) && (!date.equals(otherSpec.date)) && (!date.equals("")))
-            return false;
-
-return true;
+        return true;
 
 
-    }
-
-    public Type getType(){
-        return type;
-    }
-
-    public String getDescription(){
-        return description;
-    }
-
-    public String getDate(){
-        return date;
     }
 
 }
