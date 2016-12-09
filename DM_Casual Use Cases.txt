@@ -1,0 +1,32 @@
+Title: Create Account
+Primary Actor: User
+Level:  User Goal
+Primary Scenario
+1.	The user requests to create an account.
+2.	The system displays the UI.
+3.	The user enters the required information.
+4.	The system validates the data entered.
+5.	The system records the user’s information in the Accounts file.
+6.	The system displays confirmation message.
+Alternative Scenario
+1.	The user requests to create an account.
+2.	The system displays the UI.
+3.	The user enters the required information
+4.	The system detects invalid information has been entered.
+5.	The system displays an appropriate error message.
+
+
+Title:  Cancel Booking
+Primary Actor: User
+Level:  User Goal
+Primary Scenario
+1.	User requests to cancel Holiday booking.
+2.	The system retrieves and displays the booking information from the Bookings file.
+3.	User confirms cancellation.
+4.	The system removes booking from the Bookings file.
+5.	The system displays confirmation message.
+
+Alternative Scenario
+1.	User requests to cancel Holiday booking.
+2.	The system has no record of booking.
+3.	The system displays appropriate error message.

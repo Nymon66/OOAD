@@ -1,0 +1,26 @@
+Title: Book Holiday
+Primary Actor: User
+Level: User Goal
+Precondition:  User is logged in to account.
+Stakeholders and Interests: 
+User: wants to book holiday, and receive confirmation of booking.
+Owner: wants system to accurately store booking, payment and billing information. 
+Post Condition: Bookings file updated. User has proof of booking.
+
+Primary Scenario
+
+1.	User requests to make booking.
+2.	The system determines booking ID and display UI.
+3.	The user enters the booking details.
+4.	The user confirms booking
+5.	The system records booking details in bookings file.
+6.	The system displays confirmation message and sends confirmation email.
+
+Secondary Scenario
+
+1.	User requests to make booking.
+2.	The system determines booking ID and displays UI.
+3.	The user enters the booking details.
+4.	The user confirms booking.
+5.	The system detects invalid information.
+6.	The system displays appropriate error message.

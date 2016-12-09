@@ -1,0 +1,10 @@
+Create Account
+The user requests to create an account. The system validates the data entered and records the user’s information. The system displays confirmation message. 
+Purchase Items
+The user requests to purchase items, he has selected. The system displays the check-out UI. User confirms the items and amount in basket are correct. The user enters payment and delivery details. The system validates the data entered. The system stores the information in the orders file. The system displays confirmation message, and displays estimated delivery date.
+Rent Equipment
+The user requests to rent equipment. The system displays the UI. User confirms the selected equipment they want to rent. The system prompts the user for length of time user wants to rent equipment for. User enters the information. System validates the data entered and stores the information in the rental file. The system displays confirmation message.
+List Events
+The user requests List Events option. The system retrieves the events details from the Events file. The system displays the UI, and the events are displayed.
+Cancel Booking
+User requests to cancel a holiday booking. The system retrieves and displays the booking information from the Bookings file. User confirms cancellation. The system removes booking from the Bookings file. The system displays confirmation message.
